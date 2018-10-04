@@ -1,0 +1,189 @@
+<x-meta layout="default" title="Reservas" menu_index="10"/>
+
+
+<section class="page-header section section-primary section-no-border section-center page-header-custom-background m-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h1 class="font-weight-bold text-light text-uppercase">Reservas</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="container">
+
+	<x-form id="bookForm" name="reserva" autocomplete="off">
+		<div class="row mt-5 mb-5">
+			<div class="col-lg-4">
+
+				<section class="section section-tertiary section-no-border p-5 mt-1 mb-4" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 150}}">
+					<div class="form-row">
+						<div class="form-group col">
+							<h4 class="mt-4 mb-4 pb-0 text-uppercase">Detalhes da Reserva</h4>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<div class="form-control-custom form-control-datepicker-custom">
+								<input type="text" value="" class="form-control text-uppercase text-2" data-msg-required="Campo obrigatório."
+								 data-date-format="dd/mm/yyyy" placeholder="Entrada" name="arrival" id="bookNowArrival" required>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<div class="form-control-custom form-control-datepicker-custom">
+								<input type="text" value="" class="form-control text-uppercase text-2" data-msg-required="Campo obrigatório."
+								 data-date-format="dd/mm/yyyy" placeholder="Saída" name="departure" id="bookNowDeparture" required>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<div class="form-control-custom">
+								<select class="form-control text-uppercase text-2" name="adults" data-msg-required="Campo obrigatório."
+								 id="bookNowAdults" required>
+									<option value="">Adultos</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col">
+							<div class="form-control-custom">
+								<select class="form-control text-uppercase text-2" name="kids" data-msg-required="Campo obrigatório."
+								 id="bookNowKids" required>
+									<option value="">Crianças</option>
+									<option value="1">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			<div class="col-lg-8">
+
+				<!-- <section class="section section-quaternary section-no-border text-light p-5 mt-1 mb-4">
+					<div class="row">
+						<div class="col">
+							<h4 class="mt-4 mb-4 pb-0 text-uppercase">Select Your Room</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1 text-center">
+							<label class="mt-4 mb-4">
+								<input type="radio" checked="checked" name="bookNowRoom" id="bookNowRoom" value="">
+							</label>
+						</div>
+						<div class="col-2 d-none d-sm-block">
+							<img src="img/demos/hotel/room-1.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="col-11 col-sm-9">
+							<h5 class="mt-0 mb-0">Standard Room</h5>
+							<div class="room-suite-info">
+								<ul>
+									<li><label>BEDS</label> <span>1 Double Bed</span></li>
+									<li><label>RATES FROM</label> <strong>USD 199</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1 text-center">
+							<label class="mt-4 mb-4">
+								<input type="radio" name="bookNowRoom" id="bookNowRoom" value="">
+							</label>
+						</div>
+						<div class="col-2 d-none d-sm-block">
+							<img src="img/demos/hotel/room-2.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="col-11 col-sm-9">
+							<h5 class="mt-0 mb-0">Premium Room</h5>
+							<div class="room-suite-info">
+								<ul>
+									<li><label>BEDS</label> <span>1 Double Bed</span></li>
+									<li><label>RATES FROM</label> <strong>USD 299</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-1 text-center">
+							<label class="mt-4 mb-4">
+								<input type="radio" name="bookNowRoom" id="bookNowRoom" value="">
+							</label>
+						</div>
+						<div class="col-2 d-none d-sm-block">
+							<img src="img/demos/hotel/room-3.jpg" class="img-fluid" alt="">
+						</div>
+						<div class="col-11 col-sm-9">
+							<h5 class="mt-0 mb-0">Deluxe Room</h5>
+							<div class="room-suite-info">
+								<ul>
+									<li><label>BEDS</label> <span>2 Double Beds</span></li>
+									<li><label>RATES FROM</label> <strong>USD 399</strong></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section> -->
+
+				<section class="section section-quaternary section-no-border text-light p-5 mt-1 mb-4">
+					<div class="row">
+						<div class="col">
+							<h4 class="mt-4 mb-4 pb-0 text-uppercase">Informações para contato</h4>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col">
+							<label for="bookNowFullName" class="form-control-label">Nome Completo</label>
+							<input type="text" class="form-control" id="bookNowFullName" name="name" placeholder="">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col">
+							<label for="bookNowZip" class="form-control-label">Email</label>
+							<input type="text" class="form-control" id="bookNowZip" name="email" placeholder="">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col">
+							<label for="bookNowZip" class="form-control-label">Telefone</label>
+							<input type="text" class="form-control" id="bookNowZip" name="phone" placeholder="">
+						</div>
+					</div>
+
+				</section>
+
+				<div class="row">
+					<div class="col text-center mb-4">
+						<div class="g-recaptcha"></div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<input type="submit" value="Enviar Solicitação" class="btn btn-primary btn-lg btn-block text-uppercase p-4 mb-4">
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</x-form>
+</div>
+
+<script src='https://www.google.com/recaptcha/api.js?hl=pt'></script>

@@ -1,0 +1,7 @@
+Nome: [% name %]
+Email: [% email %]
+Telefone: [% phone %]
+
+Período: [% arrival %] à [% departure %]
+Adultos: [% adults %]
+Crianças: [% kids %]
