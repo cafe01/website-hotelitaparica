@@ -1,1 +1,7 @@
 /* Add here all your CSS customizations */
+.menu-item.active a {
+    color: #bc9552 !important;
+}
+.menu-item.active:hover a {
+    color: white !important;
+}

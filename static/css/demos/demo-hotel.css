@@ -70,7 +70,7 @@ html.boxed .body {
 	display: block;
 	font-size: 17px;
 	color: #FFF;
-	padding: 0;
+	padding: 5px 0 0;
 	margin: 0;
 	font-weight: normal;
 }
@@ -637,7 +637,7 @@ html.ie11 .sort-destination:not(.full-width) .isotope-item {
 	color: #FFF;
 	display: block;
 	font-size: 14px;
-	font-weight: normal;
+	font-weight: 600;
 	margin: 0;
 	opacity: 0.5;
 	padding: 0;

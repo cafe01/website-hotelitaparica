@@ -2,4 +2,8 @@
 widgets:
   Gallery:
     home_slider:
-      title: Slideshow
+      title: Full Banners
+    about_slider:
+      title: Sobre o Hotel
+    fotos:
+      title: Fotos
