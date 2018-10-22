@@ -16,7 +16,7 @@ exports.action = function(fields) {
 
     new Email({
         from: '"Website Hotel Itaparica - Contato" <naoresponder@kreato.com.br>',
-        to: "pedro@kreato.com.br",
+        to: "hotelitaparica@bol.com.br",
         subject: "Website Hotel Itaparica / Mensagem de: {name}",
         template: "email/reserva.tt",
         data: fields
